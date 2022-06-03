@@ -1,11 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.css';
-import '/styles/fptnhatrang.css';
-import Headingg from '@/Head';
-import Head from '@/layout';
+import '../styles/fptnhatrang.css';
+import Headingg from '../components/Head';
+import Head from '../components/layout';
 function MyApp({ Component, pageProps }) {
-  if (typeof window !== 'undefined') {
-    require('bootstrap/dist/js/bootstrap.min.js');
-  }
   return (
     <>
       <Head />

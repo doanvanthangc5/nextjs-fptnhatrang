@@ -1,7 +1,7 @@
 //import Head from 'next/head';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import PriceItem from '../component/priceItem';
+import PriceItem from '../components/priceItem';
 
 export default function Home() {
   const [error, setError] = useState();
