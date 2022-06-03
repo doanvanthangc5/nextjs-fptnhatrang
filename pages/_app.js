@@ -1,13 +1,15 @@
+import 'bootstrap/dist/css/bootstrap.css';
+import '../styles/font-awesome.min.css';
 import '../styles/fptnhatrang.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Headingg from '../component/Head';
-import { useEffect } from 'react';
+import Head from '../component/layout';
 function MyApp({ Component, pageProps }) {
-  useEffect(() => {
-    import('bootstrap/dist/js/bootstrap.min.js');
-  }, []);
+  if (typeof window !== 'undefined') {
+    require('bootstrap/dist/js/bootstrap.min.js');
+  }
   return (
     <>
+      <Head />
       <Headingg />
       <div className="container">
         <Component {...pageProps} />
