@@ -27,16 +27,24 @@ export default function Home() {
     }
   }, []);
   return (
-    <div>
-      {resp.Gd.map((item, i) => (
-        <PriceItem key={i} item={item} />
-      ))}
-      {resp.Combo.map((item, i) => (
-        <PriceItem key={i} item={item} />
-      ))}
-      {resp.Dn.map((item, i) => (
-        <PriceItem key={i} item={item} />
-      ))}
-    </div>
+    <main>
+      <section className="pricing-area pt-110 pb-90">
+        <div className="container">
+          <div className="pricing-plan-wrap">
+            <div className="row justify-content-center">
+              {resp.Gd.map((item, i) => (
+                <PriceItem key={i} item={item} />
+              ))}
+              {resp.Combo.map((item, i) => (
+                <PriceItem key={i} item={item} />
+              ))}
+              {resp.Dn.map((item, i) => (
+                <PriceItem key={i} item={item} />
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }
