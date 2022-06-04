@@ -14,15 +14,16 @@ export default function PriceItem({ item }) {
         <div className="pricing-content">
           <ul className="pricing-list">
             <li>
-              <img src="netbox/check.png" alt="img not found" /> Single Device
-              Uses
+              <img src="../static/images/check.png" alt="img not found" />{' '}
+              Single Device Uses
             </li>
             <li>
-              <img src="netbox/check.png" alt="img not found" /> Phone &amp;
-              Computer
+              <img src="../static/images/check.png" alt="img not found" /> Phone
+              &amp; Computer
             </li>
             <li>
-              <img src="netbox/check.png" alt="img not found" /> Random IP
+              <img src="../static/images/check.png" alt="img not found" />{' '}
+              Random IP
             </li>
           </ul>
           <div className="price-wrap">
