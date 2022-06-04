@@ -9,7 +9,7 @@ a{color:#ff9601}
 a:hover{color:rgba(255,150,1,0.85)}
 a:focus{color:#ff9601}
 img{max-width:100%}
-body{padding-top:71px;font-family:'Roboto', arial, Helvetica, sans-serif;font-size:18px;letter-spacing:0}
+body{font-family:'Roboto', arial, Helvetica, sans-serif;font-size:18px;letter-spacing:0}
 header .navbar{margin:0;padding:12px 0 15px 0;background-color:#fff;box-shadow:0 4px 8px -3px rgba(0,0,0,0.15)}
 header .nav > li{font-size:16px;text-transform:uppercase}
 header .nav > li a{color:#000;font-weight:700}

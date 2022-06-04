@@ -1,4 +1,4 @@
-import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/fptnhatrang.css';
 import Headingg from '../components/Head';
 import Head from '../components/layout';

@@ -19,7 +19,7 @@ export default function Heading() {
               <a className="navbar-brand" href="/">
                 <span className="logo">
                   <img
-                    src="/stat/images/logo-fptplay.png"
+                    src="/static/images/logo-fptplay.png"
                     alt="FPT TELECOM - NHA TRANG"
                   />
                 </span>
