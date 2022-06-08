@@ -1,6 +1,6 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/fptnhatrang.css';
 import Headingg from '../components/Head';
+import Footer from '../components/Footer';
 import Head from '../components/layout';
 function MyApp({ Component, pageProps }) {
   return (
@@ -10,6 +10,7 @@ function MyApp({ Component, pageProps }) {
       <div className="container">
         <Component {...pageProps} />
       </div>
+      <Footer />
     </>
   );
 }

@@ -2,13 +2,27 @@ export default function PriceItem({ item }) {
   return (
     <div className="col-lg-4 col-md-6 col-sm-9">
       <div className="pricing-item mb-30">
-        <div className="pricing-thumb">
-          <img src="netbox/pricing_thumb01.jpg" alt="img not found" />
-          <h3 className="title">Internet For Personal</h3>
-          <div className="net-speed">
-            <h5>
-              {item.priceBW} <span>MBPS</span>
-            </h5>
+        <div className={`pricing-thumb ${item.priceDATE}`}>
+          <div className="price">
+            <p>
+              Tốc độ <b>80</b>Mbps
+              <a
+                style={{
+                  position: 'absolute',
+                  marginTop: '-5px',
+                  marginLeft: '0px',
+                  background: 'url(./html-v2/images/uu-dai.png)',
+                  height: '106px',
+                  width: '104px',
+                  left: '0px',
+                }}
+              />
+            </p>
+            <span />
+            <p>
+              Chỉ từ <b>215,000</b>
+            </p>
+            <span>vnđ/ tháng</span>
           </div>
         </div>
         <div className="pricing-content">
@@ -26,13 +40,6 @@ export default function PriceItem({ item }) {
               Random IP
             </li>
           </ul>
-          <div className="price-wrap">
-            <span>Start From</span>
-            <h3 className="price">
-              {item.priceDSMONTH}
-              <sub>/Month</sub>
-            </h3>
-          </div>
           <div className="pricing-btn">
             <a className="btn btn-link" href="/pricing">
               View Plans
